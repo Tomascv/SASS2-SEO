@@ -1,23 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100;1,200&family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,200&display=swap');
-@import "_estilo";
-
-* {
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Titillium Web', sans-serif !important;
-    }
-
-.navbar {
-    background-image: linear-gradient(rgba(245, 240, 240, 0.7), rgba(114, 110, 110, 0.254));
-}
-.nav-link {
-    color: $gris-claro !important;
-}
-
+@import "_generales";
+@import "_variables";
+@import "_navbar";
+@import "_footer";
+@import "_redes";
 
 .header_tit {
     color: $azulmarca;
@@ -32,7 +18,8 @@ body {
     margin-left: 10px;
     margin-top: 15px;
     padding-bottom: 10px;
-    text-align:center;}
+    text-align:center;
+}
 .row-texto { 
      color:$gris-claro; 
      padding-left: 5px;
@@ -40,31 +27,8 @@ body {
      text-align: justify;
  }
 }
- .extlink {
-     width: 100%;
-     height: 315px;}
- 
-/* FOOTER */
-.footer {
-    position: bottom;
-    background: #ffffff;
-    padding-top: 1rem;
-    
-   .company-name {
-    text-align: center;
-    color: $gris-m;
-  }
-  .icons {
-      text-align: right;
-  }
-    .icons-item {
-    text-decoration: none;
-    font-size: 25px;
-    color: $gris-claro;
-    margin-right: 15px;
-  }
-}
 
+ 
 /*//////pages//////*/
 /*CONTACTO*/
 .img-thumbnail {
@@ -73,7 +37,8 @@ body {
 }
 
 /*NOSOTROS*/
-.marketing .col-lg-4 {
+.marketing {
+.col-lg-4 {
     margin-top: 50px;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -81,13 +46,15 @@ body {
     font-weight: 400;
     color: rgb(116, 116, 116);
 }
-
-.col-lg-4 p {
+ p {
     margin-right: .75rem;
     margin-left: .75rem;
-  }
+}
+}
 .bd-placeholder-img:hover {
     transition: 1s;
     transform: scale(1.08);
 }
 }
+
+
